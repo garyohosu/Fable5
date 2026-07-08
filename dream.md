@@ -93,3 +93,19 @@
 ### 次に試すとよさそうなこと
 - 実タスクで opus-fable-workflow を運用し、発動精度とテンプレートの過不足を継続確認する
 - 他プロジェクトでも使うなら ~/.claude/skills 側を正とするか、このリポジトリを正とするか運用を決める
+
+## 2026-07-08 10:32 Dreamingタイム
+
+### 今回やったこと
+- opus-fable-workflow を skills リポジトリ（C:\PROJECT\skills → github.com/garyohosu/skills）に追加し、同期スクリプトとREADME生成を実行してプッシュ（301b258）
+- skills の README 生成スクリプトが YAML 折りたたみ形式の description を読めなかったため、SKILL.md の description を1行形式に修正（skills 側・Fable5 側の両方）
+
+### 気づいたこと
+- スキルの正本は skills リポジトリ側になった。今後の修正は C:\PROJECT\skills で行い、sync-claude-skills.bat で ~/.claude/skills へ反映する運用
+- Fable5 リポジトリのコピーは制作記録としてのアーカイブ
+
+### 改善点
+- 特になし
+
+### 次に試すとよさそうなこと
+- 今後スキルを修正したら skills リポジトリ側だけ更新すれば十分（Fable5 側の追従は必須ではない）
